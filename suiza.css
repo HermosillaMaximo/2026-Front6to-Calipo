@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+a:visited {
+    color: blueviolet;
+}
+
+body {
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 40px 80px;
+}
+
+header {
+    margin-bottom: 40px;
+}
+
+header section {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.color_textoPrincipal {
+    color: blueviolet;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    flex: auto;
+}
+
+.bloque {
+    margin-bottom: 50px;
+}
+
+.bloque h2 {
+    color: blueviolet;
+    font-size: 26px;
+    border-bottom: 2px solid blueviolet;
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+}
+
+.bloque h3 {
+    color: blueviolet;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.bloque p {
+    color: blueviolet;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.bloque ol {
+    list-style: none;
+    padding: 0;
+}
+
+.tarjeta {
+    background-color: #1a0030;
+    border-left: 4px solid blueviolet;
+    border-radius: 6px;
+    padding: 16px 20px;
+    margin-bottom: 16px;
+}
+
+.tarjeta strong {
+    color: #d4aaff;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.tarjeta p {
+    color: #c9b3e8;
+    font-weight: normal;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.resumen li {
+    background-color: #1a0030;
+    border-left: 4px solid blueviolet;
+    border-radius: 6px;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    color: blueviolet;
+}
+
+.caja-info {
+    border: 2px solid blueviolet;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: blueviolet;
+}
+
+.caja-info h3 {
+    color: blueviolet;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.caja-info p {
+    color: #c9b3e8;
+    line-height: 1.6;
+    margin: 0;
+}
+
+footer {
+    text-align: center;
+    color: blueviolet;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 1px solid blueviolet;
+    font-size: 14px;
+}
+
+.contenedor-pais {
+    border: 2px solid blueviolet;
+    border-radius: 16px;
+    padding: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.titulo-pais {
+    color: blueviolet;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.subtitulo-pais {
+    color: #c9b3e8;
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.divisor {
+    border: none;
+    border-top: 1px solid blueviolet;
+    margin: 24px 0;
+}
+
+.titulo-seccion {
+    color: blueviolet;
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+.fila-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.dato {
+    flex: 1;
+    min-width: 150px;
+    background-color: #1a0030;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.dato h3 {
+    color: #d4aaff;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.dato p {
+    color: #c9b3e8;
+    font-size: 13px;
+    line-height: 1.5;
+}

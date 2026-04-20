@@ -8,13 +8,47 @@
 }
 
 
-.reloj {
-    width: 50px;
-    height: 50px;
+a:visited{
+    color: blueviolet;
+}
+
+body {
+    background-color: black;
+}
+
+.eresUnaDiabla {
+    color: blueviolet;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.textoVideo{
+    color: blueviolet;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    text-align: center;    
 }
 
 
-section{
+.reloj {
+    left : 0;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+
+section-contenido{
+    flex-direction: column;
     display: flex;
     align-items: center;
+}
+
+
+footer {
+    text-align: center;      /* centra el texto */
+    color: blueviolet;       /* mismo color que el resto */
+    padding: 20px;           /* espacio interno */
+    margin-top: 40px;        /* separación del contenido de arriba */
+    font-size: 14px;         /* letra un poco más chica */
 }
