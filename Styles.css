@@ -1,5 +1,9 @@
+:root {
+    --color-principal: blueviolet;
+}
+
 .color_textoPrincipal {
-    color: blueviolet;
+    color: var(--color-principal);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 30px;
     font-weight: bold;
@@ -9,7 +13,7 @@
 
 
 a:visited{
-    color: blueviolet;
+    color: var(--color-principal);
 }
 
 body {
@@ -17,13 +21,14 @@ body {
 }
 
 .eresUnaDiabla {
-    color: blueviolet;
+    color: var(--color-principal);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
 }
 
+
 .textoVideo{
-    color: blueviolet;
+    color: var(--color-principal);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 30px;
     text-align: center;    
@@ -46,9 +51,9 @@ section-contenido{
 
 
 footer {
-    text-align: center;      /* centra el texto */
-    color: blueviolet;       /* mismo color que el resto */
-    padding: 20px;           /* espacio interno */
-    margin-top: 40px;        /* separación del contenido de arriba */
-    font-size: 14px;         /* letra un poco más chica */
+    text-align: center;      
+    color: var(--color-principal);       
+    padding: 20px;           
+    margin-top: 40px;        
+    font-size: 14px;         
 }

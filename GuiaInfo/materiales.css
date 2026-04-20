@@ -1,3 +1,6 @@
+:root {
+    --color-principal: blueviolet;
+}
 * {
     margin: 0;
     padding: 0;
@@ -23,6 +26,7 @@ header {
     margin-bottom: 40px;
 }
 
+
 header section {
     display: flex;
     align-items: center;
@@ -30,7 +34,7 @@ header section {
 }
 
 .color_textoPrincipal {
-    color: blueviolet;
+    color: var(--color-principal);
     font-size: 30px;
     font-weight: bold;
     text-align: center;
@@ -46,7 +50,7 @@ header section {
 }
 
 .eresUnaDiabla {
-    color: blueviolet;
+    color: var(--color-principal);
     font-weight: bold;
 }
 
@@ -55,27 +59,27 @@ header section {
 }
 
 .bloque h2 {
-    color: blueviolet;
+    color: var(--color-principal);
     font-size: 26px;
-    border-bottom: 2px solid blueviolet;
+    border-bottom: 2px solid var(--color-principal);
     padding-bottom: 8px;
     margin-bottom: 12px;
 }
 
 
 a:visited{
-    color: blueviolet;
+    color: var(--color-principal);
 }
 
 
 .bloque h3 {
-    color: blueviolet;
+    color: var(--color-principal);
     font-size: 20px;
     margin-bottom: 10px;
 }
 
 .bloque p {
-    color: blueviolet;
+    color: var(--color-principal);
     margin-bottom: 10px;
     line-height: 1.6;
 }
@@ -87,7 +91,7 @@ a:visited{
 
 .tarjeta {
     background-color: #1a0030;
-    border-left: 4px solid blueviolet;
+    border-left: 4px solid var(--color-principal);
     border-radius: 6px;
     padding: 16px 20px;
     margin-bottom: 16px;
@@ -109,9 +113,9 @@ a:visited{
 
 .resumen li {
     background-color: #1a0030;
-    border-left: 4px solid blueviolet;
+    border-left: 4px solid var(--color-principal);
     border-radius: 6px;
     padding: 12px 20px;
     margin-bottom: 10px;
-    color: blueviolet;
+    color: var(--color-principal);
 }
