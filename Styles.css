@@ -1,59 +1,150 @@
 :root {
-    --color-principal: blueviolet;
+    --color-principal: rgb(200, 175, 120);
+    --url-imagen-reloj: url("https://www.pngarts.com/files/4/Watch-PNG-Free-Download.png");
+    --url-video-youtube: "https://www.youtube.com/embed/kf9Vs3Dm-N0?si=lxE2C-LkWoFCofUQ";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== BASE (mobile first) ===== */
+
+body {
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 16px;
+}
+
+a:visited {
+    color: var(--color-principal);
+}
+
+/* Header */
+header {
+    margin-bottom: 24px;
+}
+
+section-contenido {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    padding: 10px 0;
+}
+
+.reloj {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 0;
 }
 
 .color_textoPrincipal {
     color: var(--color-principal);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 30px;
+    font-size: 22px;
     font-weight: bold;
     text-align: center;
     text-decoration: none;
+    flex: auto;
 }
 
-
-a:visited{
-    color: var(--color-principal);
-}
-
-body {
-    background-color: black;
+/* Secciones */
+section {
+    margin-bottom: 10px;
 }
 
 .eresUnaDiabla {
     color: var(--color-principal);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
+    line-height: 1.6;
 }
 
+ol {
+    padding-left: 20px;
+}
 
-.textoVideo{
+ol li {
+    margin-bottom: 12px;
+}
+
+/* Video */
+.textoVideo {
     color: var(--color-principal);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 30px;
-    text-align: center;    
+    font-size: 18px;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 16px;
 }
 
-
-.reloj {
-    left : 0;
-    width: 100px;
-    height: 100px;
-    position: absolute;
+.textoVideo iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    display: block;
+    margin: 0 auto;
 }
 
-
-section-contenido{
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-}
-
-
+/* Footer */
 footer {
-    text-align: center;      
-    color: var(--color-principal);       
-    padding: 20px;           
-    margin-top: 40px;        
-    font-size: 14px;         
+    text-align: center;
+    color: var(--color-principal);
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+/* ===== TABLET (768px+) ===== */
+@media (min-width: 768px) {
+    body {
+        padding: 30px 40px;
+    }
+
+    section-contenido {
+        flex-direction: row;
+        position: relative;
+    }
+
+    .reloj {
+        width: 90px;
+        height: 90px;
+        position: absolute;
+        left: 0;
+    }
+
+    .color_textoPrincipal {
+        font-size: 28px;
+        flex: auto;
+    }
+
+    .textoVideo {
+        font-size: 24px;
+    }
+}
+
+/* ===== DESKTOP (1024px+) ===== */
+@media (min-width: 1024px) {
+    body {
+        padding: 40px 80px;
+    }
+
+    .reloj {
+        width: 100px;
+        height: 100px;
+    }
+
+    .color_textoPrincipal {
+        font-size: 30px;
+    }
+
+    .textoVideo iframe {
+        max-width: 560px;
+        height: 315px;
+        aspect-ratio: unset;
+    }
 }

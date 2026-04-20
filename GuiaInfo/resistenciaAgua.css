@@ -1,6 +1,5 @@
-/* Variables globales */
 :root {
-    --color-principal: blueviolet;
+    --color-principal: rgb(200, 175, 120);
 }
 * {
     margin: 0;
@@ -17,14 +16,14 @@ a {
 }
 
 a:visited{
-    color: blueviolet;
+    color: var(--color-principal);
 }
 
 
 body {
     background-color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 40px 80px;
+    padding: 16px;
 }
 
 header {
@@ -85,32 +84,56 @@ a:visited {
 }
 
 .tarjeta {
-    background-color: #1a0030;
+    background-color:rgb(140, 110, 55);
     border-left: 4px solid var(--color-principal);
     border-radius: 6px;
     padding: 16px 20px;
     margin-bottom: 16px;
 }
 
+ 
+
 .tarjeta strong {
-    color: #d4aaff;
+    color: rgb(54, 51, 45);
     font-size: 16px;
     display: block;
     margin-bottom: 6px;
 }
 
 .tarjeta p {
-    color: #c9b3e8;
+    color: rgb(39, 35, 26);
     font-weight: normal;
     margin: 0;
     line-height: 1.6;
 }
 
 .resumen li {
-    background-color: #1a0030;
+    background-color: #0f0f0f;
     border-left: 4px solid var(--color-principal);
     border-radius: 6px;
     padding: 12px 20px;
     margin-bottom: 10px;
     color: var(--color-principal);
+}
+
+/* ===== TABLET (768px+) ===== */
+@media (min-width: 768px) {
+    body {
+        padding: 30px 40px;
+    }
+
+    .bloque h2 {
+        font-size: 28px;
+    }
+
+    .bloque h3 {
+        font-size: 22px;
+    }
+}
+
+/* ===== DESKTOP (1024px+) ===== */
+@media (min-width: 1024px) {
+    body {
+        padding: 40px 80px;
+    }
 }
