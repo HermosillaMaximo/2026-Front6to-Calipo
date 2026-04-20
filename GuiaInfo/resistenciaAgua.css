@@ -116,7 +116,6 @@ a:visited {
     color: var(--color-principal);
 }
 
-/* ===== TABLET (768px+) ===== */
 @media (min-width: 768px) {
     body {
         padding: 30px 40px;
