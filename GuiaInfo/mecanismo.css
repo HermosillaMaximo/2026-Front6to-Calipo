@@ -113,7 +113,6 @@ p.tarjeta {
     color: var(--color-principal);
 }
 
-/* ===== TABLET (768px+) ===== */
 @media (min-width: 768px) {
     body {
         padding: 30px 40px;
@@ -128,7 +127,6 @@ p.tarjeta {
     }
 }
 
-/* ===== DESKTOP (1024px+) ===== */
 @media (min-width: 1024px) {
     body {
         padding: 40px 80px;

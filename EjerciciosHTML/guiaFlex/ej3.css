@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    border-bottom: 1px solid #eee;
+}
+
+.header-usuario {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.header-back,
+.header-menu {
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.perfil {
+    padding: 16px;
+}
+
+.perfil-top {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 12px;
+}
+
+.foto-perfil {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    object-fit: cover;
+}
+
+.perfil-stats {
+    display: flex;
+    gap: 20px;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+}
+
+.stat strong {
+    font-size: 1rem;
+}
+
+.stat span {
+    font-size: 0.75rem;
+    color: #555;
+}
+
+.perfil-bio {
+    margin-bottom: 12px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.perfil-bio p {
+    color: #444;
+}
+
+.perfil-botones {
+    display: flex;
+    gap: 8px;
+}
+
+.btn-seguir,
+.btn-mensaje {
+    flex: 1;
+    padding: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #efefef;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-seguir {
+    background-color: #0095f6;
+    color: white;
+    border-color: #0095f6;
+}
+
+.destacadas {
+    display: flex;
+    gap: 16px;
+    padding: 12px 16px;
+    overflow-x: auto;
+    border-bottom: 1px solid #eee;
+}
+
+.historia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    min-width: 60px;
+}
+
+.historia img {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: 2px solid #e1306c;
+    object-fit: cover;
+}
+
+.historia span {
+    font-size: 0.7rem;
+    color: #333;
+    text-align: center;
+}
+
+.tabs {
+    display: flex;
+    border-bottom: 1px solid #eee;
+}
+
+.tab {
+    flex: 1;
+    padding: 12px 0;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+}
+
+.tab.activo {
+    border-bottom: 2px solid #000;
+}
+
+.grilla {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+}
+
+.grilla img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+}
+
+@media (min-width: 600px) {
+    body {
+        max-width: 600px;
+    }
+
+    .foto-perfil {
+        width: 100px;
+        height: 100px;
+    }
+
+    .perfil-stats {
+        gap: 36px;
+    }
+}
+
+@media (min-width: 900px) {
+    body {
+        max-width: 900px;
+        border-left: 1px solid #eee;
+        border-right: 1px solid #eee;
+    }
+}

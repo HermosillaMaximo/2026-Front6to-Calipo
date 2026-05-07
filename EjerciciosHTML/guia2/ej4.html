@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de contacto</title>
+</head>
+<body>
+
+    <h2>Formulario de contacto</h2>
+
+    <form>
+        <div>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" maxlength="30">
+        </div>
+        <br>
+        <div>
+            <label for="apellido">Apellido:</label><br>
+            <input type="text" id="apellido" name="apellido" maxlength="30">
+        </div>
+        <br>
+        <div>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <br>
+        <div>
+            <label for="asunto">Asunto:</label><br>
+            <select id="asunto" name="asunto">
+                <option value="">-- Selecciona una opcion --</option>
+                <option value="presupuesto">Pedir presupuesto</option>
+                <option value="cita">Solicitar cita previa</option>
+                <option value="otros">Otros</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <p>¿Como nos encontraste?</p>
+            <input type="checkbox" id="amigo" name="fuente" value="amigo">
+            <label for="amigo">Un amigo</label><br>
+            <input type="checkbox" id="google" name="fuente" value="google">
+            <label for="google">Googleando</label><br>
+            <input type="checkbox" id="redes" name="fuente" value="redes">
+            <label for="redes">Redes sociales</label><br>
+            <input type="checkbox" id="otro" name="fuente" value="otro">
+            <label for="otro">Otros</label>
+        </div>
+        <br>
+        <div>
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" maxlength="300" rows="5" cols="40" placeholder="Escribi tu mensaje aqui..."></textarea>
+        </div>
+        <br>
+        <div>
+            <input type="checkbox" id="terminos" name="terminos" required>
+            <label for="terminos">Acepto los terminos y condiciones</label>
+        </div>
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+
+</body>
+</html>
